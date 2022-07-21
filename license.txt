@@ -1,0 +1,1 @@
+background: https://pixabay.com/pt/service/license/
