@@ -1,1 +1,3 @@
 background: https://pixabay.com/pt/service/license/
+texto principal: https://codepen.io/Coding_Journey/pen/BEMgbX*/
+botão de redes sociais:https://codepen.io/sanketbodke/pen/LYymbRq
