@@ -41,3 +41,14 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 });
 
 //FONTE: https://codepen.io/Coding_Journey/pen/BEMgbX
+
+
+console.log("████    ███████ ██   ██  ██████")
+console.log("██  ██  ██      ██   ██ ██    ██")
+console.log("██   ██ █████   ██   ██      ██")
+console.log("██   ██ ██      ██   ██     ██")
+console.log("██  ██  ██       ██  ██")
+console.log("████    ███████   ███      ██")
+console.log("")
+console.log('%c Bora trocar uma ideia no meu linkedin? ','color:hsl(0, 0%, 80%);background-color:hsl(0, 0%, 0%);')
+console.log('%c Segue lá, www.linkedin.com/in/mthalmeida/ ','color:hsl(0, 100%, 90%);background-color:hsl(0, 100%, 50%);');
