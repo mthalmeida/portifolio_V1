@@ -1,5 +1,5 @@
 body {
-  background: url('images/background.jpg') center center no-repeat fixed;
+  background: radial-gradient(rgba(0, 0, 0, 0.404), rgb(0, 0, 0)), url('images/background.jpg') center center no-repeat fixed;
   font-family: 'Montserrat', sans-serif;
   color: #eee;
   -webkit-background-size: cover;
@@ -175,13 +175,16 @@ body {
 }
 
 #quem-sou-eu, article {
+  color: white;
   display: block;
   height: 250px;
   width: auto;
   padding-left: 150px;
+  padding-bottom: 300px;
 }
 
 #quem-sou-eu, h3 {
+  color: #dd7732;
   margin-left: 140px;
   margin-top: -250px;
   padding-right: 150px;
