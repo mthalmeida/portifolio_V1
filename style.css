@@ -1,0 +1,41 @@
+body {
+  background: url('images/background.jpg') center center no-repeat fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  /*FONTE: https://pt.stackoverflow.com/questions/81371/como-adicionar-imagem-como-background-fixo*/
+}
+
+#cabecalho {
+  display: flex;
+  top: 0;
+  padding-left: 50px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.582);
+  color: aliceblue;
+  width: 100%;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 16px;
+}
+
+#redes-sociais {
+  margin-left: 63%;
+
+
+}
+
+#redes-sociais, img, a {
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  min-width: auto;
+  height: 25px;
+  color: transparent;
+  display: inline-block;
+  text-indent: 20px;
+}
