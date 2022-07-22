@@ -12,6 +12,15 @@ body {
   /*FONTE: https://pt.stackoverflow.com/questions/81371/como-adicionar-imagem-como-background-fixo*/
 }
 
+#rodape h5{
+  font-size: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.74);
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+
 #cabecalho {
   display: flex;
   top: 0;
@@ -156,3 +165,25 @@ body {
 
 /*FONTE: https://codepen.io/sanketbodke/pen/LYymbRq
 /******************************************************************/
+
+#quem-sou-eu, img {
+  margin-bottom: 8px;
+  border-radius: 50%;
+  height: 250px;
+  width: auto;
+  padding-left: 120px;
+}
+
+#quem-sou-eu, article {
+  display: block;
+  height: 250px;
+  width: auto;
+  padding-left: 150px;
+}
+
+#quem-sou-eu, h3 {
+  margin-left: 140px;
+  margin-top: -250px;
+  padding-right: 150px;
+  text-align: justify;
+}
