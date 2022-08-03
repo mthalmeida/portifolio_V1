@@ -24,26 +24,24 @@ body {
   margin-left: 20px;
 }
 
-
 #cabecalho {
   display: flex;
   top: 0;
   padding-left: 30px;
-  position: fixed;
+  position:relative;
   background-color: rgba(0, 0, 0, 0.582);
   color: aliceblue;
   width: 100%;
   font-family: 'Nanum Brush Script', cursive;
   font-size: 22px;
-  padding-bottom: 13px;
-  padding-top: 13px;
+
 }
 
 #perfil {
   border-radius: 50%;
   padding-left: 0%;
   width:50px;
-  height: auto;
+  height: 50px;
   margin-top: 10px;
 
 }
@@ -111,71 +109,61 @@ body {
 }
 
 /******************************************************************/
-
-.social-menu {
-  position: block;
-  width: 65%;
-  margin-top: 30px;
-  transform: translate(50%, 50%);
+.botao-social {
+padding-left: 93%;
+padding-right: 25px;
+padding-top: 200px;
+position: fixed;
 }
 
-.social-menu ul{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 0;
-  margin: 0;
-  transform: translate(-50%, -50%);
-  display: flex;
-}
-
-.social-menu ul li{
+.social-icons { 
+  text-align: right;
+  padding-top: 13px;
   list-style: none;
-  margin: 0 15px;
 }
 
-.social-menu ul li .fab{
-  font-size: 30px;
-  line-height: 60px;
-  transition: .3s;
-  color: #000;
+.social-icons li {
+  display: inline-block;
+
 }
 
-.social-menu ul li .fab:hover{
-  color: #fff;
-}
-
-.social-menu ul li a{
-  position: relative;
+.social-icons li a {
+  font-size: 20px;
   display: block;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #fff;
   text-align: center;
-  transition: .15s;
-  box-shadow: 0 5px 4px rgba(0,0,0,.5)
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #444;
+  color: #DDD;
+  transition: 0.3s;
 }
-
-.social-menu ul li a:hover{
-  transform: translate(0, -10%);
+.social-icons li a:hover {
+  background: #FC7D15;
+  color: #FFF;
 }
-
-.social-menu ul li:nth-child(1) a:hover{
-  background-color: rgba(0, 0, 0, 0.829);
+.social-icons li a i {
+  line-height: 40px !important;
 }
-.social-menu ul li:nth-child(2) a:hover{
-  background-color: #E4405F;
+.social-icons.vertical {
+  width: 40px;
 }
-.social-menu ul li:nth-child(3) a:hover{
-  background-color: #0077b5;
+.social-icons.vertical li {
+  margin-bottom: 5px;
 }
-.social-menu ul li:nth-child(4) a:hover{
-  background-color: #000;
+.social-icons.vertical li:last-child {
+  margin-right: 0;
 }
-
+.social-icons.vertical li a {
+  background: #444;
+  color: #DDD;
+}
+.social-icons.vertical li a:hover {
+  background: #FC7D15;
+  color: #FFF;
+}
 /******************************************************************/
-
 #quem-sou-eu, img {
   margin-bottom: 8px;
   border-radius: 50%;
@@ -191,6 +179,7 @@ body {
   width: auto;
   padding-left: 150px;
   padding-bottom: 300px;
+  min-width: 500px;
 }
 
 #quem-sou-eu, h3 {
@@ -199,4 +188,8 @@ body {
   margin-top: -250px;
   padding-right: 150px;
   text-align: justify;
+}
+
+.imagem-perfil {
+
 }
