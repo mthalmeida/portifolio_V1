@@ -9,7 +9,6 @@ body {
   padding: 0px;
   margin: 0px;
   border: 0px;
-  /*FONTE: https://pt.stackoverflow.com/questions/81371/como-adicionar-imagem-como-background-fixo*/
 }
 
 #rodape h5{
@@ -20,11 +19,16 @@ body {
   padding-bottom: 12px;
 }
 
+#nome {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 
 #cabecalho {
   display: flex;
   top: 0;
-  padding-left: 50px;
+  padding-left: 30px;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.582);
   color: aliceblue;
@@ -33,6 +37,15 @@ body {
   font-size: 22px;
   padding-bottom: 13px;
   padding-top: 13px;
+}
+
+#perfil {
+  border-radius: 50%;
+  padding-left: 0%;
+  width:50px;
+  height: auto;
+  margin-top: 10px;
+
 }
 
 #texto-base {
@@ -97,12 +110,10 @@ body {
   }
 }
 
-/*FONTE: https://codepen.io/Coding_Journey/pen/BEMgbX*/
 /******************************************************************/
 
 .social-menu {
   position: block;
-
   width: 65%;
   margin-top: 30px;
   transform: translate(50%, 50%);
@@ -143,7 +154,7 @@ body {
   background-color: #fff;
   text-align: center;
   transition: .15s;
-  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+  box-shadow: 0 5px 4px rgba(0,0,0,.5)
 }
 
 .social-menu ul li a:hover{
@@ -163,7 +174,6 @@ body {
   background-color: #000;
 }
 
-/*FONTE: https://codepen.io/sanketbodke/pen/LYymbRq
 /******************************************************************/
 
 #quem-sou-eu, img {

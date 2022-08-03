@@ -1,3 +1,4 @@
 background: https://pixabay.com/pt/service/license/
-texto principal: https://codepen.io/Coding_Journey/pen/BEMgbX*/
-botão de redes sociais:https://codepen.io/sanketbodke/pen/LYymbRq
+texto principal: https://codepen.io/Coding_Journey/pen/BEMgbX/
+botão de redes sociais: https://codepen.io/sanketbodke/pen/LYymbRq
+Estilo de imagem background: https://pt.stackoverflow.com/questions/81371/como-adicionar-imagem-como-background-fixo
