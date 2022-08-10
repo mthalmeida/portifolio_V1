@@ -7,7 +7,7 @@ I'm a full-stack student at @Trybe looking for opportunities and collaboration o
 - 🤝 I'm looking to collaborate on data science and deep learning projects.
 
 <div>
-<a href="https://github.com/seu-usuário-aqui">
+<a href="https://github.com/mthalmeida">
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mthalmeida&layout=compact&langs_count=7&theme=dracula"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=mthalmeida&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
 </div>
