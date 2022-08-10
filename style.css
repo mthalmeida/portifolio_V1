@@ -8,7 +8,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  
   }
   
   .navbar-brand {
@@ -17,11 +16,15 @@
   }
 
   .col-md-4 img {
-    min-height: 350px;
+    max-height: 350px;
   }
-  
-  .primeiro {
-    min-height: 200%;
+
+  .card-title {
+    margin-top: 8px;
+  }
+
+  .card-text {
+    margin-top: 20px;
   }
   
   .projects {
