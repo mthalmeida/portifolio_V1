@@ -64,7 +64,6 @@
     text-align: center;
     overflow: hidden;
     padding-left: 8%;
-    overflow-y: scroll;
   }
   .container p span.typed-text {
     font-weight: normal;
