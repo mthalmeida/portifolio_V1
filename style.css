@@ -24,6 +24,10 @@ body {
   margin-left: 5%;
 }
 
+.progress {
+  background-color: #dd7732;
+}
+
 .card {
   margin-top: 30px;
   min-height: 300px;
