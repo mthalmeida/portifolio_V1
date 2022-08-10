@@ -6,44 +6,27 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
+
 }
 
-#rodape h5{
-  font-size: 15px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.74);
-  padding-top: 10px;
-  padding-bottom: 12px;
-}
-
-#nome {
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-#cabecalho {
-  display: flex;
-  top: 0;
-  padding-left: 30px;
-  position:relative;
-  background-color: rgba(0, 0, 0, 0.582);
-  color: aliceblue;
-  width: 100%;
+.navbar-brand {
   font-family: 'Nanum Brush Script', cursive;
-  font-size: 22px;
-
+  margin-bottom: -15px;
 }
 
-#perfil {
-  border-radius: 50%;
-  padding-left: 0%;
-  width:50px;
-  height: 50px;
-  margin-top: 10px;
+.projects {
+  width: 90%;
+  margin-top: 100px;
+  margin-left: 4%;
+}
 
+.card {
+  margin-top: 30px;
+}
+
+#header {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #texto-base {
@@ -52,15 +35,10 @@ body {
   display: inline-block;
   text-indent: 20px;
   padding-top: 300px;
+  margin-left: -90px;
 }
 
 /**********************************************************/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .container {
   height: 100vh;
@@ -109,17 +87,12 @@ body {
 }
 
 /******************************************************************/
-.botao-social {
-padding-left: 93%;
-padding-right: 25px;
-padding-top: 200px;
-position: fixed;
-}
 
 .social-icons { 
   text-align: right;
   padding-top: 13px;
   list-style: none;
+  margin-right: 20%;
 }
 
 .social-icons li {
@@ -164,32 +137,13 @@ position: fixed;
   color: #FFF;
 }
 /******************************************************************/
-#quem-sou-eu, img {
-  margin-bottom: 8px;
-  border-radius: 50%;
-  height: 250px;
-  width: auto;
-  padding-left: 120px;
-}
 
-#quem-sou-eu, article {
+#rodape {
+  font-size: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.493);
   color: white;
-  display: block;
-  height: 250px;
-  width: auto;
-  padding-left: 150px;
-  padding-bottom: 300px;
-  min-width: 500px;
-}
-
-#quem-sou-eu, h3 {
-  color: #dd7732;
-  margin-left: 140px;
-  margin-top: -250px;
-  padding-right: 150px;
-  text-align: justify;
-}
-
-.imagem-perfil {
-
+  width: 100%;
+  padding: 8px;
+  margin-top: 90px;
 }

@@ -93,6 +93,63 @@ function buttonToClear() {
   botãoDeRecomecar.addEventListener('click', clearBoard);
 }
 
+//   Função que altera o tamanho do Grid
+function alteraGrid() {
+  if (document.getElementById('board-size').value === '') {
+    alert('Board Inválido!');
+  } else {
+    chamaPai = document.getElementById('board-size').value;
+    alteraClasse = document.getElementsByClassName('pixel');
+
+    if (chamaPai < 5) {
+      chamaPai = 5;
+    } else if (chamaPai > 50) {
+      chamaPai = 50;
+    }
+
+    while (alteraClasse.length) {
+      elementoRetirado = alteraClasse[0];
+      elementoRetirado.remove();
+    }
+
+    for (index = 1; index <= (chamaPai * chamaPai); index++) {
+      const newGrid = document.createElement('div');
+      newGrid.classList = ('pixel');
+      newGrid.id = ('pixel' + index);
+      console.log(newGrid);
+      document.getElementById('pixel-board').appendChild(newGrid);
+    }
+    let stringAuto = '';
+    for (let index = 0; index < chamaPai; index++) {
+      if (index === 0) {
+        stringAuto = ('auto');
+      } else {
+        stringAuto = (stringAuto + ' auto');
+      }
+    }
+    defineColuna = document.getElementById('pixel-board');
+    defineColuna.style.gridTemplateColumns = (stringAuto);
+  }
+}
+
+//   Função que cria cores aleatorias ao carregar pagina
+function colorRandom() {
+  const mainColor = document.getElementById('black');
+  mainColor.style.backgroundColor = ('black');
+
+  const randomColor1 = Math.floor(Math.random() * 16777215).toString(16);
+  const first = document.getElementById('red');
+  first.style.backgroundColor = '#' + randomColor1;
+
+  const randomColor2 = Math.floor(Math.random() * 16777215).toString(16);
+  const second = document.getElementById('blue');
+  second.style.backgroundColor = '#' + randomColor2;
+
+  const randomColor3 = Math.floor(Math.random() * 16777215).toString(16);
+  const third = document.getElementById('pink');
+  third.style.backgroundColor = '#' + randomColor3;
+}
+
 //  Carregamento automatico junto com a pagina
 window.onload = function altoCarregamento() {
   paletteNew();
@@ -101,5 +158,6 @@ window.onload = function altoCarregamento() {
   classExchange();
   coloPixels();
   buttonToClear();
-  imput ();
+  colorRandom();
+  alteraGrid();
 };
