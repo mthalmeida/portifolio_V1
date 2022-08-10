@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["to imagine...", "creativity...", "to discover...", "solve...", "reinvent...", "to explore..."];
+const textArray = ["puedo imaginar...", "creatividad....", "descubrir...", "resolver...", "reinventar...", "explorar..."];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000;
@@ -50,8 +50,8 @@ console.log("██   ██ ██      ██   ██     ██")
 console.log("██  ██  ██       ██ ██")
 console.log("████    ███████   ███      ██")
 console.log("")
-console.log('%c Bora trocar uma ideia no meu linkedin? ', 'color:hsl(0, 0%, 80%);background-color:hsl(0, 0%, 0%);')
-console.log('%c Chama lá; www.linkedin.com/in/mthalmeida/ ', 'color:hsl(0, 100%, 90%);background-color:hsl(0, 100%, 50%);');
+console.log('%c Intercambiemos una idea en mi linkedin?', 'color:hsl(0, 0%, 80%);background-color:hsl(0, 0%, 0%);')
+console.log('%c llamar allí; www.linkedin.com/in/mthalmeida/ ', 'color:hsl(0, 100%, 90%);background-color:hsl(0, 100%, 50%);');
 
 
 //***********************************************************
