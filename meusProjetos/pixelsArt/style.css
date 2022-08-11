@@ -1,7 +1,6 @@
 .background {
   background: url("background.gif") no-repeat center;
   position: relative;
-  min-height: 100%;
 }
 
 #rodape h5 {
@@ -85,7 +84,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 350px;
+  width: 800px;
 }
 
 .pixel {
@@ -93,7 +92,7 @@
   background-color: white;
   width: 40px;
   height: 40px;
-  margin: 10px;
+  margin: 2px;
   border-radius: 10%;
 }
 
