@@ -1,6 +1,7 @@
-body {
+.background {
   background: url("background.gif") no-repeat center;
-  position:relative;
+  position: relative;
+  min-height: 100%;
 }
 
 #rodape h5 {
