@@ -6,9 +6,9 @@ function startWithPattern() {
 
 //  Cria paleta - feito novamente no bendito exercicio 6
 const paletaDeCores = document.querySelector('#color-palette');
-const cores = ['black', 'red', 'blue', 'pink'];
+const cores = ['black', 'red', 'blue', 'pink', 'cor5', 'cor6', 'cor7', 'cor8', 'cor9', 'cor10'];
 function paletteNew() {
-  for (let index = 0; index < 4; index += 1) {
+  for (let index = 0; index < 10; index += 1) {
     const cor = document.createElement('div');
     cor.className = 'color';
     cor.id = cores[index];
@@ -19,7 +19,7 @@ function paletteNew() {
 
 //  Cria grid - feito novamente no bendito exercicio 7
 function criaElemento() {
-  for (let index = 0; index < 25; index += 1) {
+  for (let index = 0; index < 50; index += 1) {
     const chamaPai = document.getElementsByTagName('section')[2];
     //  acrescentar indice acima em caso de alteração!
     const criaFilho = document.createElement('div');
@@ -34,35 +34,143 @@ function classExchange() {
   const red = document.getElementById('red');
   const blue = document.getElementById('blue');
   const pink = document.getElementById('pink');
+  const cor05 = document.getElementById('cor5');
+  const cor06 = document.getElementById('cor6');
+  const cor07 = document.getElementById('cor7');
+  const cor08 = document.getElementById('cor8');
+  const cor09 = document.getElementById('cor9');
+  const cor010 = document.getElementById('cor10');
 
   function blackClick() {
+    black.classList.add('selected');
     red.classList.remove('selected');
     blue.classList.remove('selected');
     pink.classList.remove('selected');
-    black.classList.add('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.remove('selected');
   }
   function redClick() {
     black.classList.remove('selected');
+    red.classList.add('selected');
     blue.classList.remove('selected');
     pink.classList.remove('selected');
-    red.classList.add('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.remove('selected');
   }
   function blueClick() {
     black.classList.remove('selected');
     red.classList.remove('selected');
-    pink.classList.remove('selected');
     blue.classList.add('selected');
+    pink.classList.remove('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.remove('selected');
   }
   function pinkClick() {
     black.classList.remove('selected');
     red.classList.remove('selected');
     blue.classList.remove('selected');
     pink.classList.add('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.remove('selected');
+  }
+  function cor5() {
+    black.classList.remove('selected');
+    red.classList.remove('selected');
+    blue.classList.remove('selected');
+    pink.classList.remove('selected');
+    cor05.classList.add('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.remove('selected');
+  }
+  function cor6() {
+    black.classList.remove('selected');
+    red.classList.remove('selected');
+    blue.classList.remove('selected');
+    pink.classList.remove('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.add('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.remove('selected');
+  }
+  function cor7() {
+    black.classList.remove('selected');
+    red.classList.remove('selected');
+    blue.classList.remove('selected');
+    pink.classList.remove('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.add('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.remove('selected');
+  }
+  function cor8() {
+    black.classList.remove('selected');
+    red.classList.remove('selected');
+    blue.classList.remove('selected');
+    pink.classList.remove('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.add('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.remove('selected');
+  }
+  function cor9() {
+    black.classList.remove('selected');
+    red.classList.remove('selected');
+    blue.classList.remove('selected');
+    pink.classList.remove('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.add('selected');
+    cor010.classList.remove('selected');
+  }
+  function cor10() {
+    black.classList.remove('selected');
+    red.classList.remove('selected');
+    blue.classList.remove('selected');
+    pink.classList.remove('selected');
+    cor05.classList.remove('selected');
+    cor06.classList.remove('selected');
+    cor07.classList.remove('selected');
+    cor08.classList.remove('selected');
+    cor09.classList.remove('selected');
+    cor010.classList.add('selected');
   }
   black.addEventListener('click', blackClick);
   red.addEventListener('click', redClick);
   blue.addEventListener('click', blueClick);
   pink.addEventListener('click', pinkClick);
+  cor05.addEventListener('click', cor5);
+  cor06.addEventListener('click', cor6);
+  cor07.addEventListener('click', cor7);
+  cor08.addEventListener('click', cor8);
+  cor09.addEventListener('click', cor9);
+  cor010.addEventListener('click', cor10);  
 }
 
 //  Função para colorir os pixels do Grid
@@ -148,6 +256,34 @@ function colorRandom() {
   const randomColor3 = Math.floor(Math.random() * 16777215).toString(16);
   const third = document.getElementById('pink');
   third.style.backgroundColor = '#' + randomColor3;
+
+  const randomColor5 = Math.floor(Math.random() * 16777215).toString(16);
+  const cinco = document.getElementById('cor5');
+  cinco.style.backgroundColor = '#' + randomColor5;
+
+  const randomColor6 = Math.floor(Math.random() * 16777215).toString(16);
+  const seis = document.getElementById('cor6');
+  seis.style.backgroundColor = '#' + randomColor6;
+
+  const randomColor7 = Math.floor(Math.random() * 16777215).toString(16);
+  const sete = document.getElementById('cor7');
+  sete.style.backgroundColor = '#' + randomColor7;
+
+  const randomColor8 = Math.floor(Math.random() * 16777215).toString(16);
+  const oito = document.getElementById('cor8');
+  oito.style.backgroundColor = '#' + randomColor8;
+
+  const randomColor9 = Math.floor(Math.random() * 16777215).toString(16);
+  const nove = document.getElementById('cor9');
+  nove.style.backgroundColor = '#' + randomColor9;
+
+  const randomColor10 = Math.floor(Math.random() * 16777215).toString(16);
+  const dez = document.getElementById('cor10');
+  dez.style.backgroundColor = '#' + randomColor10;
+
+  const randomColor11 = Math.floor(Math.random() * 16777215).toString(16);
+  const onze = document.getElementById('cor11');
+  onze.style.backgroundColor = '#' + randomColor11;
 }
 
 //  Carregamento automatico junto com a pagina
