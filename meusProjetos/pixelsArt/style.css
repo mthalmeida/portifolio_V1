@@ -1,3 +1,8 @@
+body {
+  background: url("background.gif") no-repeat center;
+  position:relative;
+}
+
 #rodape h5 {
   font-size: 15px;
   font-family: 'Quicksand', sans-serif;
@@ -10,29 +15,30 @@
   margin-top: 25px;
 }
 
+.barra-numeral {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@font-face {
+  font-family: 'Neon Led Light';
+  src: url('NEONLEDLight.otf') format('truetype');
+}
+
 #title {
   text-align: center;
-  font-size: 60px;
-  font-family: 'Square Peg', cursive;
+  font-size: 80px;
+  font-family: 'Neon Led Light';
+  src: url('NEONLEDLight.otf') format('truetype');
   color: white;
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 #color-palette {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-}
-
-#generate-board {
-  display: inline;
-  margin-right: -40%;
-  margin-left: 40%;
-}
-
-#board-size {
-  display: inline;
-  margin-right: -40%;
-  margin-left: 23%;
 }
 
 .color , .selected {
@@ -90,18 +96,12 @@
   border-radius: 10%;
 }
 
-#button {
-  position: relative;
-  display: inline-block;
-}
-
 #clear-board {
-  position: relative;
-  display: inline-block;
-  left: 40%;
-  margin-bottom: 10px;
   background: white;
-  border-radius: 10%;
+  justify-content: center;
+  width: 80px;
+  margin-bottom: 20px;
+  margin-left: 45%;
 }
 
 .background {
@@ -113,4 +113,3 @@
   width: 100%;
   scale: 170%
 }
-
