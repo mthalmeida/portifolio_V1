@@ -170,6 +170,12 @@
     padding: 8px;
     margin-top: 90px;
   }
+
+  .status {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 /*  VISÃO DE TABLET OU TELA COM ROTAÇÃO  */
@@ -342,6 +348,11 @@
     padding: 8px;
     margin-top: 90px;
   }
+
+  .status {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*  VISÃO DE CELULAR  */
@@ -513,4 +524,10 @@ body {
   padding: 8px;
   margin-top: 90px;
 }
+.status {
+  display: flex;
+  justify-content: center;
+  margin-left: 3%;
+}
+
 }
