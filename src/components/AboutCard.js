@@ -10,7 +10,7 @@ export default class AboutCard extends React.Component {
       <div class="card-about">
         <div class="card2-about">
           <img
-            src="https://mthalmeida.github.io/portifolio/meusProjetos/lessonsLearned/foto-perfil.jpg"
+            src="https://uploaddeimagens.com.br/images/004/065/849/original/foto.jpg"
             className="img-fluid rounded-start"
             alt="Foto de perfil Dev"
           />
